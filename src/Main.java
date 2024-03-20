@@ -6,7 +6,7 @@ public class Main
 {    
     public static void main(String[] args){
         try {
-            BufferedReader reader = new BufferedReader(new FileReader("src/hello.txt"));
+            BufferedReader reader = new BufferedReader(new FileReader("src/" + args[0]));
             String line;
             while ((line = reader.readLine()) != null) {
                 System.out.println(line);
